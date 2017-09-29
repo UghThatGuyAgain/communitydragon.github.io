@@ -4,9 +4,9 @@ The company "Riot Games" owns and develops a game called "League of Legends". Ri
 
 ## Goals
 The goals for this project are simple:
-* Create an API and CDN to give developers an alternative to data dragon.
-  * This API and CDN will manage the inconsistent and not updated data provided by Data Dragon.
-  * This API and CDN  will provide extended and aditional data that Data dragon currently does not provide. 
+* Create an API to give developers an alternative to data dragon.
+  * This API will manage the inconsistent and not updated data provided by Data Dragon.
+  * This API  will provide extended and aditional data that Data dragon currently does not provide. 
 
 ## Contributors
 * [Sandi Karajic](https://github.com/skarajic) (Project Leader, Full Stack Developer)
@@ -48,11 +48,21 @@ The goals for this project are simple:
 ---
 
 # Back-End
-## Requirements
-## API
-### Setup
-### Tools
-### Endpoints
-### Documentation
+## Goals
+The goals for the back-end are as following:
+* Relink existing assets from ddragon and reroute them as part of cdragon.
+* Set up a way to pull data from ddragon, improve it and set up an endpoint for it (currently there is a library being developed by [Querijn](https://github.com/querijn) for differenciating data called [DiffDragon](https://github.com/Querijn/DiffDragon)).
+* Set up accounts to be able to manually add and change data.
+* Set up a way to add images and asign them an endpoint.
+
+## Setup
+The REST API will be hosted on a NodeJS server with a (TBD) database with the domain being https://api.cdragon.com/. The API will be developed in TypeScript & ES6/ES7.
+
+## Tools
+For unit & integration testing the frameworks [Mocha](https://mochajs.org/) and [Chai](http://chaijs.com/) will be used. Builds will be tested by [Travis-CI](https://travis-ci.org/).
+
+<br/>
+
+---
 
 # Front-End
